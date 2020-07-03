@@ -1,6 +1,6 @@
 pipeline
 {
-  agent any
+  agent { label 'docker' }
   tools
   {
    maven 'maven'
@@ -57,10 +57,7 @@ pipeline
        steps
        {
          echo 'Starting to build docker image'
-         withDockerRegistry([ credentialsId: "123456789@artifactory", url: "http://10.127.130.66:8040/artifactory" ]) 
-         {
-              sh 'docker push devopsqaassignment'
-            }
+         sh "docker build -t devopsqaassignment:1 ."
        }
      }
     
