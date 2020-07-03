@@ -58,7 +58,7 @@ pipeline
        steps
        {
          echo 'Starting to build docker image'
-         sh 'docker build -t devopsqaassignment:latest .'
+         bat 'docker build -t devopsqaassignment:latest .'
        }
      }
     
