@@ -54,10 +54,11 @@ pipeline
      }
     stage('Docker Build Image')
      {
+       agent any
        steps
        {
          echo 'Starting to build docker image'
-         sh "docker build -t devopsqaassignment:1 ."
+         sh 'docker build -t devopsqaassignment:latest .'
        }
      }
     
