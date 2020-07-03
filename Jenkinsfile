@@ -56,7 +56,7 @@ pipeline
      {
        steps
        {
-        docker build -t devopsqaassignment:1
+         docker {build -t devopsqaassignment:1}
        }
      }
     
