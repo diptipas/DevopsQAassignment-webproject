@@ -18,7 +18,7 @@ pipeline
      {
        steps
        {
-        mvn clean install
+        bat "mvn clean install"
        }
      }
    }
