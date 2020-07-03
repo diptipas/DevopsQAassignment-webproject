@@ -67,7 +67,7 @@ pipeline
        steps
        {
          echo 'Starting to create docker container'
-         bat 'docker run -d --name devopsassignmentcontainer -p 9005:8080 devopsqaassignment:latest'
+         bat 'docker run -d --name devopsassignmentcontainer -p 9005:8090 devopsqaassignment:latest'
        }
      }
     
