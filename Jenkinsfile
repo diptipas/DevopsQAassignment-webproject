@@ -21,7 +21,7 @@ pipeline
         bat "mvn clean install"
        }
      }
-    stage('Sonar')
+    stage('Sonar Analysis')
     {
       steps
       {
