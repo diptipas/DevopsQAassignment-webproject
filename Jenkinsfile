@@ -61,6 +61,15 @@ pipeline
          bat 'docker build -t devopsqaassignment:latest .'
        }
      }
+    stage('Deploy Docker Container')
+     {
+       agent any
+       steps
+       {
+         echo 'Starting to create docker container'
+         bat 'docker run -d --name devopsassignmentcontainer -p 9005:8080 devopsqaassignment:latest'
+       }
+     }
     
    }
   
